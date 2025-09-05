@@ -1,0 +1,77 @@
+<!-- Compact Navigation Display -->
+<div class="member-auth-nav">
+  <a class="member-login-link" id="loginLink" style="display:inline-block;">Login / Signup</a>
+  <div class="member-status-nav" id="memberStatusNav">
+    <span class="member-name-nav" id="memberNameNav">Hi, Member</span>
+    <span>•</span>
+    <span class="member-id-nav" id="memberIdNav">BZ******</span>
+    <span class="member-level-nav" id="memberLevelNav">(Level)</span>
+    <span>•</span>
+    <a class="not-you-link" id="notYouNav">Not you?</a>
+    </div>
+</div>
+
+<!-- Email Entry Modal -->
+<div class="auth-modal" id="emailModal">
+  <div class="auth-card">
+    <h2 class="auth-title">Breezes Rewards</h2>
+    <p class="auth-subtitle">Enter your email to log in or sign up</p>
+    <input type="email" class="auth-input" id="emailInput" placeholder="Your email address">
+    <button class="auth-btn" id="emailSubmit">Continue</button>
+    <div class="auth-error" id="emailError">Please enter a valid email address</div>
+    <div class="auth-footer">
+      <a class="auth-link" id="emailCancel">Cancel</a>
+    </div>
+  </div>
+</div>
+
+<!-- OTP Verification Modal -->
+<div class="auth-modal" id="otpModal">
+  <div class="auth-card">
+    <h2 class="auth-title">Check Your Email</h2>
+    <p class="auth-subtitle">We sent a 6-digit code to <span id="otpEmail" style="color:#00b4d1;"></span></p>
+    <input type="text" class="auth-input" id="otpInput" placeholder="Enter 6-digit code" maxlength="6" style="text-align:center; font-size:20px; letter-spacing:2px;">
+    <button class="auth-btn" id="otpSubmit">Verify Code</button>
+    <div class="auth-error" id="otpError">Invalid code. Please try again.</div>
+    <div class="auth-footer">
+      <a class="auth-link" id="otpResend">Resend code</a>
+      <span style="color:#ccc;">|</span>
+      <a class="auth-link" id="otpCancel">Cancel</a>
+    </div>
+  </div>
+</div>
+
+<!-- Registration Modal -->
+<div class="auth-modal" id="regModal">
+  <div class="auth-card">
+    <h2 class="auth-title">Welcome to Breezes Rewards!</h2>
+    <p class="auth-subtitle">Just a few details to get you started</p>
+    <input type="text" class="auth-input" id="regFirstName" placeholder="First Name">
+    <input type="text" class="auth-input" id="regLastName" placeholder="Last Name">
+    <div style="display:flex; gap:12px; align-items:center; margin-bottom:16px;">
+      <label style="color:#666; min-width:80px;">Birthday:</label>
+      <select class="auth-input" id="regMonth" style="flex:1; margin:0;">
+        <option value="">Month</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
+      <select class="auth-input" id="regDay" style="flex:1; margin:0;">
+        <option value="">Day</option>
+      </select>
+    </div>
+    <button class="auth-btn" id="regSubmit">Create Account</button>    <div class="auth-error" id="regError">Please fill in all fields</div>
+    <div class="auth-footer">
+      <a class="auth-link" id="regCancel">Cancel</a>
+    </div>
+  </div>
+</div>
